@@ -159,12 +159,12 @@ $(function () {
   function _trTable({ fullname, gender, birthday, city, state, zip }) {
     return `
     <tr>
-      <th>${fullname}</th>
-      <th>${gender}</th>
-      <th>${birthday}</th>
-      <th>${city}</th>
-      <th>${state}</th>
-      <th>${zip}</th>
+      <td>${fullname}</td>
+      <td>${gender}</td>
+      <td>${birthday}</td>
+      <td>${city}</td>
+      <td>${state}</td>
+      <td>${zip}</td>
     </tr>
     `;
   }
