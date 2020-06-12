@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RPA Challenge</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="page-header">
+    <h1>RPA Challenge</h1>
+  </header>
+
+  <main class="page-main">
+    <aside class="page-aside">
+      <h3 class="page-aside__title">Instructions</h3>
+      <p class="page-aside__paragraph">1. The goal of this challenge is to create a workflow that will input data from a
+        spreadsheet into the form fields on the screen.</p>
+      <p class="page-aside__paragraph">2. Beware! The fields will change position on the screen after every submission
+        throughout 7 rounds thus the workflow must correctly identify where each spreadsheet record must be typed every
+        time.</p>
+      <p class="page-aside__paragraph">3. The actual countdown of the challenge will begin once you click the Start
+        button
+        until then you may submit the form as many times as you wish without receiving penalties.</p>
+      <p class="page-aside__paragraph">Good luck!</p>
+
+      <footer class="page-aside__footer">
+        <button type="button" class="btn primary js--start">Start</button>
+        <p class="text-copyright">Created by Minh Tang Q.</p>
+      </footer>
+    </aside>
+
+    <section class="page-content avoid-click js--page-content">
+      <div class="form">
+        <div class="row panel-yourname js--panel-yourname js--submit-enter">
+          <div class="col s12">
+            <div class="form-control">
+              <label>My name is</label>
+              <input type="text" name="yourname">
+            </div>
+          </div>
+          <div class="clear-both"></div>
+          <button type="button" class="btn primary ml-10 js--letgo">Let's go</button>
+        </div>
+        <!-- /.row -->
+
+        <div class="row panel-information hidden js--panel-information js--submit-enter">
+          <div class="js--inner-form"></div>
+          <div class="clear-both"></div>
+          <button type="button" class="btn primary ml-10 js--submit">Submit</button>
+        </div>
+        <!-- /.row -->
+
+        <div class="row panel-result hidden js--panel-result">
+          <h2>Completed successfully!</h2>
+          <table class="table js--table-results">
+            <caption>Made by <strong>Minh Tang Quoc</strong></caption>
+            <thead class="thead-light">
+              <tr>
+                <th>Fullname</th>
+                <th>Gender</th>
+                <th>Birthday</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Zip</th>
+              </tr>
+            </thead>
+
+            <tbody></tbody>
+          </table>
+        </div>
+        <!-- /.row -->
+
+      </div>
+      <!-- /.form -->
+    </section>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
